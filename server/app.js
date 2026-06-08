@@ -15,7 +15,7 @@ app.use(helmet());
 
 const allowedOrigins = process.env.CORS_ORIGIN
   ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
-  : ['http://localhost:3000', 'http://localhost:5173','attendance-management-gilt-zeta.vercel.app'];
+  : ['http://localhost:3000', 'http://localhost:5173','https://attendance-management-gilt-zeta.vercel.app'];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
